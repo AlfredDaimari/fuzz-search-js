@@ -1,6 +1,6 @@
 // levenshtein algorithm
 
-export function levenshtein(string1, string2) {
+export function lev_dis(string1, string2) {
   let arr = [];
 
   for (let i = 0; i <= string2.length; i += 1) {
