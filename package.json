@@ -11,11 +11,13 @@
     "url": "git+https://github.com/AlfredDaimari/fuzzjs.git"
   },
   "keywords": [
-    "fuzzy-search",
-    "string-matching",
+    "fuzzy search",
+    "string matching",
     "levenshtein",
-    "fuzzy-matching",
-    "fuzzy"
+    "fuzzy matching",
+    "fuzzy",
+    "damerau-levenshtein",
+    "needleman-wunsch"
   ],
   "author": "Alfred Daimari",
   "license": "MIT",
