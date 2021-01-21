@@ -1,0 +1,26 @@
+{
+  "name": "fuzzjs",
+  "version": "0.0.0",
+  "description": "library for fuzzy search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfredDaimari/fuzzjs.git"
+  },
+  "keywords": [
+    "fuzzy-search",
+    "string-matching",
+    "levenshtein",
+    "fuzzy-matching",
+    "fuzzy"
+  ],
+  "author": "Alfred Daimari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlfredDaimari/fuzzjs/issues"
+  },
+  "homepage": "https://github.com/AlfredDaimari/fuzzjs#readme"
+}
