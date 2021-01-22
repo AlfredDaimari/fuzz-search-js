@@ -4,7 +4,7 @@
   "description": "library for fuzzy search",
   "main": "dist/index.js",
   "scripts": {
-    "test": "node fuztest.js",
+    "test": "node test/fuztest.js",
     "build": "webpack --mode production"
   },
   "repository": {
