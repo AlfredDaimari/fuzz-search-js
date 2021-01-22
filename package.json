@@ -18,7 +18,7 @@
     "fuzzy matching",
     "fuzzy",
     "damerau-levenshtein",
-    "needleman-wunsch"
+    "hamming distance"
   ],
   "author": "Alfred Daimari",
   "license": "MIT",
