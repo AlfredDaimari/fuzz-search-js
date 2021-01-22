@@ -1,4 +1,4 @@
-// function for applying hamming distance algorithm
+// hamming distance
 
 function ham_dis(string1, string2) {
   if (string1.toString().length != string2.toString().length) {
