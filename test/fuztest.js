@@ -2,7 +2,7 @@
 const assert = require("assert");
 const dam_lev = require("../src/damerau-levenshtein");
 const lev_dis = require("../src/levenshtein-distance");
-const ned_wunsch = require("../src/needleman-wunsch");
+const ham_dis = require("../src/hamming-distance");
 const Fuzzy = require("../src/index");
 
 function checkDAMLEV() {
@@ -31,7 +31,7 @@ function checkLEVDIS() {
     assert.strictEqual(
       lev_dis("kitten", "sitting"),
       3,
-      "1. checking levenshtein distance \u2716, completed in " +
+      "2. checking levenshtein distance \u2716, completed in " +
         (Date.now() - t1) +
         "ms"
     );
@@ -45,9 +45,28 @@ function checkLEVDIS() {
   }
 }
 
-function checkNEDWUNSCH() {}
+function checkHAMD() {
+  try {
+    const t1 = Date.now();
+    assert.strictEqual(
+      ham_dis("karolin", "kathrin"),
+      3,
+      "3. checking hamming distance \u2716, completed in " +
+        (Date.now() - t1) +
+        "ms"
+    );
+    console.log(
+      "3. checking hamming distance \u2713, completed in " +
+        (Date.now() - t1) +
+        "ms"
+    );
+  } catch (e) {
+    console.log(e.message);
+  }
+}
 
 function checkFUZ() {}
 
 checkDAMLEV();
 checkLEVDIS();
+checkHAMD();
