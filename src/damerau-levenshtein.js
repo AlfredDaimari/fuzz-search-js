@@ -1,5 +1,4 @@
 // damerau-levenshtein algorithm
-
 function dam_lev(string1, string2) {
   let arr = [];
   for (let i = 0; i <= string2.length; i += 1) {
@@ -20,7 +19,7 @@ function dam_lev(string1, string2) {
       arr[i][j] = Math.min(
         arr[i - 1][j] + 1,
         arr[i][j - 1] + 1,
-        d[i - 1][j - 1] + cost
+        arr[i - 1][j - 1] + cost
       );
 
       if (
@@ -37,4 +36,4 @@ function dam_lev(string1, string2) {
   return arr[string2.length][string1.length];
 }
 
-exports.dam_lev = dam_lev;
+module.exports = dam_lev;

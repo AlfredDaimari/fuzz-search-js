@@ -1,5 +1,4 @@
 // levenshtein algorithm
-
 function lev_dis(string1, string2) {
   let arr = [];
 
@@ -31,5 +30,4 @@ function lev_dis(string1, string2) {
 
   return arr[string2.length][string1.length];
 }
-
-exports.lev_dis = lev_dis;
+module.exports = lev_dis;
