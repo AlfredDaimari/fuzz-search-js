@@ -1,6 +1,6 @@
 src
 gitignore
-fuztest.js
+test
 node_modules
 webpack.config.js
 package-lock.json
