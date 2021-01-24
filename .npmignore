@@ -1,5 +1,5 @@
 src
-gitignore
+.gitignore
 test
 node_modules
 webpack.config.js

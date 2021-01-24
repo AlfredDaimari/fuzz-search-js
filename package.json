@@ -2,7 +2,10 @@
   "name": "fuzzjs",
   "version": "0.0.0",
   "description": "library for fuzzy search",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "test": "node test/fuztest.js",
     "build": "webpack --mode production"
