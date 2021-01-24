@@ -1,6 +1,6 @@
 {
   "name": "fuzz-search-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "library for fuzzy search",
   "main": "./dist/index.js",
   "files": [
