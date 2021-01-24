@@ -23,7 +23,7 @@ const fuz = new fuzzy(["helo",
     "boy of my own",
     "an act",
     "personal",])
-console.log(fuz.lev('helo'), options={level:1, max:2}) \\default {level:3, max:5}
+console.log(fuz.lev('helo'), options={level:1, max:2}) //default {level:3, max:5}
 //expected value
 [{ word: "helo", score: 1 },{ word: "hello", score: 2 },]
 ```
