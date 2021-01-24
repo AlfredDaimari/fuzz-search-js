@@ -26,7 +26,7 @@
   "author": "Alfred Daimari",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlfredDaimari/fuzzjs/issues"
+    "url": "https://github.com/AlfredDaimari/fuzz-search-js/issues"
   },
   "homepage": "https://github.com/AlfredDaimari/fuzz-search-js#readme",
   "devDependencies": {
