@@ -1,4 +1,4 @@
-# fuzz-search-js v0.0.3
+# fuzz-search-js v1.0.0
 
 A library for implementing fuzzy search using:
 
@@ -48,5 +48,4 @@ fuzzy.getHamDis('String1', 'String2')
 fuzzy.getDamLevDis('String1', 'String2')
 //longest subsequence score
 fuzzy.getLongSubqDis('String1', 'String2')
-)
 ```
