@@ -1,4 +1,4 @@
-# fuzz-search-js v1.0.0
+# fuzz-search-js
 
 A library for implementing fuzzy search using:
 
@@ -9,23 +9,25 @@ A library for implementing fuzzy search using:
 
 ## Installation
 
-Using npm
+Using npm:
 
 ```shell
 npm i --save fuzz-search-js
 ```
 
+### Options
+
+- level: the length of the string is the starting level, how much levels should it match strings above and below its level
+
+- max: how many strings should it return
+
 ```js
 const fuzzy = require("fuzz-search-js");
 // For implementing Levenshtein Distance algorithm
-const fuz = new fuzzy(["helo",
-    "hello",
-    "boy of my own",
-    "an act",
-    "personal",])
+const fuz = new fuzzy(["helo","hello", "boy of my own","an act","personal",])
 console.log(fuz.lev('helo'), options={level:1, max:2}) //default {level:3, max:5}
 //expected value
-[{ word: "helo", score: 1 },{ word: "hello", score: 2 },]
+[{ word: "helo", score: 0 },{ word: "hello", score: 1 },]
 ```
 
 ## Algorithms in library for lists (how to call them)
@@ -41,11 +43,11 @@ Object.dam('String)
 
 ```js
 //levenshtein distance
-fuzzy.getLevenDis('String1', 'String2')
+fuzzy.getLevenDis("String1", "String2");
 //hamming distance
-fuzzy.getHamDis('String1', 'String2')
+fuzzy.getHamDis("String1", "String2");
 //damerau levenshtein distance
-fuzzy.getDamLevDis('String1', 'String2')
+fuzzy.getDamLevDis("String1", "String2");
 //longest subsequence score
-fuzzy.getLongSubqDis('String1', 'String2')
+fuzzy.getLongSubqDis("String1", "String2");
 ```
