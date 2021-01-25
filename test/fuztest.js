@@ -97,10 +97,10 @@ function checkFUZ() {
   try {
     const t1 = Date.now();
     assert.deepStrictEqual(
-      fuz.lev("help", { level: 1, max: 3 }),
+      fuz.lev("helo", { level: 1, max: 3 }),
       [
-        { word: "helo", score: 1 },
-        { word: "hello", score: 2 },
+        { word: "helo", score: 0 },
+        { word: "hello", score: 1 },
       ],
       "5. checking fuz levenshtein distance \u2716, completed in " +
         (Date.now() - t1) +
