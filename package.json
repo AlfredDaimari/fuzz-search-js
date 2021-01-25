@@ -21,7 +21,8 @@
     "fuzzy matching",
     "fuzzy",
     "damerau-levenshtein",
-    "hamming distance"
+    "hamming distance",
+    "longest subsequence"
   ],
   "author": "Alfred Daimari",
   "license": "MIT",
