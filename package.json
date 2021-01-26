@@ -16,14 +16,15 @@
     "url": "git+https://github.com/AlfredDaimari/fuzz-search-js.git"
   },
   "keywords": [
-    "fuzzy search",
-    "string matching",
-    "levenshtein",
-    "fuzzy matching",
     "fuzzy",
+    "search",
+    "levenshtein",
     "damerau-levenshtein",
     "hamming distance",
-    "longest subsequence"
+    "longest subsequence",
+    "edit distance",
+    "string matching",
+    "fuzzy matching"
   ],
   "author": "Alfred Daimari",
   "license": "MIT",
