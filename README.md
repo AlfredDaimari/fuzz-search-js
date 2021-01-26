@@ -17,7 +17,7 @@ npm i --save fuzz-search-js
 
 ### Options
 
-- level: the length of the string is the starting level, how much levels should it match strings above and below its level
+- level: the length of the string is the starting level, how many levels should it match strings above and below its level
 
 - max: how many strings should it return
 
@@ -34,9 +34,9 @@ console.log(fuz.lev('helo'), options={level:1, max:2}) //default {level:3, max:5
 
 ```js
 //levenshtein distance
-Object.lev('String')
+Object.lev("String");
 //damerau levenshtein
-Object.dam('String)
+Object.dam("String");
 ```
 
 ## Algorithms in library for comparing two strings (will return score)
