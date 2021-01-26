@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "test": "node test/fuztest.js",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "publish": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
