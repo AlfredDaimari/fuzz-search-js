@@ -25,7 +25,7 @@ npm i --save fuzz-search-js
 const fuzzy = require("fuzz-search-js");
 // For implementing Levenshtein Distance algorithm
 const fuz = new fuzzy(["helo","hello", "boy of my own","an act","personal",])
-console.log(fuz.lev('helo'), options={level:1, max:2}) //default {level:3, max:5}
+console.log(fuz.lev('helo', options={level:1, max:2})) //default {level:3, max:5}
 //expected value
 [{ word: "helo", score: 0 },{ word: "hello", score: 1 },]
 ```
